@@ -1,0 +1,13 @@
+{
+    "crypto": "Crypto error",
+    "crypto.constraint": "Crypto constraint error",
+    "crypto.constraint.notFound": "Crypto constraint not found",
+    "crypto.constraint.exists": "Crypto constraint already exists",
+    "crypto.index": "Crypto index error",
+    "crypto.index.notFound": "Crypto index not found",
+    "crypto.index.exists": "Crypto index already exists",
+    "crypto.record": "Crypto record error",
+    "crypto.record.notFound": "Crypto record not found",
+    "crypto.health": "Crypto health error",
+    "crypto.health.notFound": "Crypto health not found"
+}

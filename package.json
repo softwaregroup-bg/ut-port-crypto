@@ -1,0 +1,48 @@
+{
+  "name": "ut-port-crypto",
+  "version": "0.1.0",
+  "description": "UT Port Crypto",
+  "main": "index.js",
+  "scripts": {
+    "lint": "ut-lint .",
+    "release": "ut-release",
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover",
+    "precover": "ut-precover",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "test": "ut-test",
+    "version": "ut-version",
+    "jenkins": "ut-jenkins",
+    "gitlab": "ut-gitlab"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/softwaregroup-bg/ut-port-crypto.git"
+  },
+  "keywords": [
+    "crypto",
+    "data protection"
+  ],
+  "devDependencies": {
+    "ut-tools": "^6.15.0",
+    "tap": "^12.6.3"
+  },
+  "dependencies": {
+    "ut-port-http": "^8.0.1",
+    "lodash.isequal": "4.5.0"
+  },
+  "author": "Software Group",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/softwaregroup-bg/ut-port-crypto/issues"
+  },
+  "homepage": "https://github.com/softwaregroup-bg/ut-port-crypto#readme"
+}
