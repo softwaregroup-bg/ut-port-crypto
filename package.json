@@ -25,19 +25,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/softwaregroup-bg/ut-port-crypto.git"
+    "url": "git@github.com:softwaregroup-bg/ut-port-crypto.git"
   },
   "keywords": [
     "crypto",
     "data protection"
   ],
   "devDependencies": {
-    "ut-tools": "^6.15.0",
+    "ut-tools": "^6.16.2",
     "tap": "^12.6.3"
   },
-  "dependencies": {
-    "ut-port-http": "^8.0.1",
-    "lodash.isequal": "4.5.0"
+  "peerDependencies": {
+    "ut-port-http": "^8.0.1"
   },
   "author": "Software Group",
   "license": "Apache-2.0",

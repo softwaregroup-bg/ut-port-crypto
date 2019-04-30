@@ -1,5 +1,18 @@
 const errors = require('./errors');
-const isEqual = require('lodash.isequal');
+function isEqual(x, y) {
+    if (typeof x !== typeof y) return false;
+    if (typeof x === 'object') {
+        const xProps = Object.getOwnPropertyNames(x);
+        const yProps = Object.getOwnPropertyNames(y);
+        if (xProps.length !== yProps.length) return false;
+        for (let i = 0; i < xProps.length; i += 1) {
+            let prop = xProps[i];
+            if (!isEqual(x[prop], y[prop])) return false;
+        }
+        return true;
+    }
+    return x === y;
+}
 
 module.exports = (params, ...rest) => {
     const {registerErrors, utMethod} = params;
