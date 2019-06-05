@@ -99,9 +99,8 @@ module.exports = (params, ...rest) => {
             });
         }
         async ready(...params) {
-            const result = await super.start(...params);
             if (this.config.autoSync) await this.sync();
-            return result;
+            return super.ready(...params);
         }
         handlers() {
             const methods = this.config.mock ? require('./mock')() : require('./handlers');
