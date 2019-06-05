@@ -1,3 +1,12 @@
+## [0.1.2](https://github.com/softwaregroup-bg/ut-port-crypto/compare/v0.1.1...v0.1.2) (2019-06-05)
+
+
+### Bug Fixes
+
+* typo ([318bf0d](https://github.com/softwaregroup-bg/ut-port-crypto/commit/318bf0d))
+
+
+
 ## 0.1.1 (2019-04-30)
 
 
