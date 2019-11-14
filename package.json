@@ -35,7 +35,7 @@
     "ut-function.equals": "^1.1.0"
   },
   "devDependencies": {
-    "ut-tools": "^6.28.0",
+    "ut-tools": "^6.28.1",
     "tap": "^12.6.3"
   },
   "peerDependencies": {
