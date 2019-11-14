@@ -1,6 +1,7 @@
 exports.request = function(msg, $meta) {
     return {
         uri: '/actuator/health/',
-        httpMethod: 'GET'
+        httpMethod: 'GET',
+        allowedStatusCodes: msg.allowedStatusCodes
     };
 };
