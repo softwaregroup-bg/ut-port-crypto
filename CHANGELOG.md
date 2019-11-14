@@ -1,3 +1,7 @@
+## [0.2.1](https://github.com/softwaregroup-bg/ut-port-crypto/compare/v0.2.0...v0.2.1) (2019-11-14)
+
+
+
 # [0.2.0](https://github.com/softwaregroup-bg/ut-port-crypto/compare/v0.1.2...v0.2.0) (2019-11-14)
 
 
