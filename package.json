@@ -31,12 +31,15 @@
     "crypto",
     "data protection"
   ],
+  "dependencies": {
+    "ut-function.equals": "^1.1.0"
+  },
   "devDependencies": {
-    "ut-tools": "^6.16.2",
+    "ut-tools": "^6.28.1",
     "tap": "^12.6.3"
   },
   "peerDependencies": {
-    "ut-port-http": "^8.0.1"
+    "ut-port-http": "^8.0.5"
   },
   "author": "Software Group",
   "license": "Apache-2.0",

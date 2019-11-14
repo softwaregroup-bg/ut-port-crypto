@@ -1,25 +1,11 @@
 const errors = require('./errors');
-function isEqual(x, y) {
-    if (typeof x !== typeof y) return false;
-    if (typeof x === 'object') {
-        const xProps = Object.getOwnPropertyNames(x);
-        const yProps = Object.getOwnPropertyNames(y);
-        if (xProps.length !== yProps.length) return false;
-        for (let i = 0; i < xProps.length; i += 1) {
-            let prop = xProps[i];
-            if (!isEqual(x[prop], y[prop])) return false;
-        }
-        return true;
-    }
-    return x === y;
-}
+const equals = require('ut-function.equals');
 
 module.exports = (params, ...rest) => {
     const {registerErrors, utMethod} = params;
     return class crypto extends require('ut-port-http')(params, ...rest) {
         get defaults() {
             return {
-                logLevel: 'trace',
                 type: 'crypto',
                 namespace: 'crypto',
                 imports: ['crypto'],
@@ -78,7 +64,7 @@ module.exports = (params, ...rest) => {
                             items: configItems
                         });
                         status = 'added';
-                    } else if (!isEqual(items, configItems)) {
+                    } else if (!equals(items, configItems)) {
                         await utMethod(`${this.config.namespace}.${entity}.update`)({
                             documentType,
                             items: configItems
