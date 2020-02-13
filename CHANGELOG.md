@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/softwaregroup-bg/ut-port-crypto/compare/v0.2.1...v0.3.0) (2020-02-13)
+
+
+### Features
+
+* add new method - crypto.record.getByExternalId ([186f47c](https://github.com/softwaregroup-bg/ut-port-crypto/commit/186f47c3dd6ca8bb2e7ae5f07c941dcfbf96d310))
+
+
+
 ## [0.2.1](https://github.com/softwaregroup-bg/ut-port-crypto/compare/v0.2.0...v0.2.1) (2019-11-14)
 
 

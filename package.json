@@ -1,6 +1,6 @@
 {
   "name": "ut-port-crypto",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "UT Port Crypto",
   "main": "index.js",
   "scripts": {
