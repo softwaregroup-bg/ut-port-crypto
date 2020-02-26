@@ -29,11 +29,13 @@ module.exports = (params, ...rest) => {
                 parseResponse: false
             };
         }
+
         async start(...params) {
             const result = await super.start(...params);
             Object.assign(this.errors, registerErrors(errors));
             return result;
         }
+
         async sync() {
             const {retries, interval} = this.config.autoSync;
             let counter = 0;
@@ -84,10 +86,12 @@ module.exports = (params, ...rest) => {
                 summary: result.reduce((all, arr) => all.concat(arr), [])
             });
         }
+
         async ready(...params) {
             if (this.config.autoSync) await this.sync();
             return super.ready(...params);
         }
+
         handlers() {
             const methods = this.config.mock ? require('./mock')() : require('./handlers');
             return Object.entries(methods).reduce((handlers, [name, method]) => {

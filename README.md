@@ -13,12 +13,14 @@
 * crypto.constraint.update
 * crypto.record.add
 * crypto.record.get
+* crypto.record.getByExternalId
 * crypto.record.getBulk
 * crypto.record.fetchByQuery
 * crypto.record.fetchByConstraint
 * crypto.record.fetch
 * crypto.record.update
 * crypto.record.remove
+* crypto.record.removeBulk
 * crypto.record.index
 * crypto.health.check
 
@@ -30,7 +32,6 @@ For this purpose a property called
 in the message. It can be a number
 or an array of numbers representing
 the given http status codes.
-
 
 examples:
 
@@ -51,7 +52,7 @@ const record = await this.bus.importMethod('crypto.record.get')({
 ```
 
 In case the crypto service returns
-a respons with a status code marked
+a response with a status code marked
 as allowed, then the result will be
 the error itself but it will not be
 logged as such.
