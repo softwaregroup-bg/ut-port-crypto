@@ -5,9 +5,9 @@ const entities = {
     health: require('./health')
 };
 const conversions = {
-    'request': 'send',
-    'response': 'receive',
-    'error': 'receive'
+    request: 'send',
+    response: 'receive',
+    error: 'receive'
 };
 
 const defaultHooksFactory = (entity, action) => {
@@ -34,12 +34,12 @@ const defaultHooksFactory = (entity, action) => {
 
 const handlers = {};
 
-for (let entity in entities) {
-    let actions = entities[entity];
-    for (let action in actions) {
-        let hooks = actions[action];
-        let defaultHooks = defaultHooksFactory(entity, action);
-        for (let hook in defaultHooks) {
+for (const entity in entities) {
+    const actions = entities[entity];
+    for (const action in actions) {
+        const hooks = actions[action];
+        const defaultHooks = defaultHooksFactory(entity, action);
+        for (const hook in defaultHooks) {
             handlers[`${entity}.${action}.${hook}.${conversions[hook]}`] = hooks[hook] || defaultHooks[hook];
         }
     };

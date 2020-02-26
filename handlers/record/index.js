@@ -8,5 +8,6 @@ module.exports = {
     fetch: require('./fetch'),
     update: require('./update'),
     remove: require('./remove'),
+    removeBulk: require('./removeBulk'),
     index: require('./index')
 };
