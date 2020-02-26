@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/softwaregroup-bg/ut-port-crypto/compare/v0.3.0...v0.4.0) (2020-02-26)
+
+
+### Features
+
+* add bulkRemove method ([f43ada1](https://github.com/softwaregroup-bg/ut-port-crypto/commit/f43ada1b49499b8fc1a28dfab422bdefbcef6515))
+
+
+
 # [0.3.0](https://github.com/softwaregroup-bg/ut-port-crypto/compare/v0.2.1...v0.3.0) (2020-02-13)
 
 
