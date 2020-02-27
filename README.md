@@ -19,6 +19,7 @@
 * crypto.record.fetchByConstraint
 * crypto.record.fetch
 * crypto.record.update
+* crypto.record.bulkPartialUpdate
 * crypto.record.remove
 * crypto.record.removeBulk
 * crypto.record.index

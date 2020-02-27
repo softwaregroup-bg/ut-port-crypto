@@ -7,6 +7,7 @@ module.exports = {
     fetchByConstraint: require('./fetchByConstraint'),
     fetch: require('./fetch'),
     update: require('./update'),
+    bulkPartialUpdate: require('./bulkPartialUpdate'),
     remove: require('./remove'),
     removeBulk: require('./removeBulk'),
     index: require('./index')
