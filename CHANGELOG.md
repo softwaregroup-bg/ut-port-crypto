@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/softwaregroup-bg/ut-port-crypto/compare/v0.4.0...v0.5.0) (2020-02-27)
+
+
+### Features
+
+* add crypto.record.bulkPartialUpdate ([5598169](https://github.com/softwaregroup-bg/ut-port-crypto/commit/5598169382ac406a7e8b00f330742c9a0950c586))
+
+
+
 # [0.4.0](https://github.com/softwaregroup-bg/ut-port-crypto/compare/v0.3.0...v0.4.0) (2020-02-26)
 
 
