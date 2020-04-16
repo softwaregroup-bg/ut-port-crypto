@@ -1,8 +1,12 @@
-exports.request = function(msg, $meta) {
+exports.request = function({
+    id,
+    sync = true,
+    allowedStatusCodes
+} = {}, $meta) {
     return {
         uri: '/api/record/remove/',
         httpMethod: 'DELETE',
-        payload: msg,
-        allowedStatusCodes: msg.allowedStatusCodes
+        payload: {id, sync},
+        allowedStatusCodes
     };
 };
