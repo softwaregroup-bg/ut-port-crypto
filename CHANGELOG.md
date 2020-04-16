@@ -1,3 +1,12 @@
+## [0.5.1](https://github.com/softwaregroup-bg/ut-port-crypto/compare/v0.5.0...v0.5.1) (2020-04-16)
+
+
+### Bug Fixes
+
+* default sync to true when calling crypto.record.remove ([818df6c](https://github.com/softwaregroup-bg/ut-port-crypto/commit/818df6c04f4e1cc38a12856ad8b18c9ca90030c9))
+
+
+
 # [0.5.0](https://github.com/softwaregroup-bg/ut-port-crypto/compare/v0.4.0...v0.5.0) (2020-02-27)
 
 
